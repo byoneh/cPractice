@@ -207,7 +207,7 @@ void SpeechManager::showScore()
 	}
 	cout << endl;
 	system("pause");
-	//system("cls");
+	system("cls");
 	this->show_menu();
 }
 
