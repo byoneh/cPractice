@@ -36,6 +36,18 @@ public:
 	//显示晋级结果
 	void showScore();
 
+	//保存比赛结果
+	void saveRecord();
+
+	//查看往届记录
+	void loadRecord();
+
+	//显示往届记录
+	void showRecod();
+
+	//清空记录
+	void clearRecord();
+
 
 	//析构函数
 	~SpeechManager();
@@ -47,8 +59,13 @@ public:
 	vector<int> vVictory;
 	//存放编号和具体选手
 	map<int, Speaker> m_speaker;
+	//比赛轮数
 	int m_index;
+	//文件为空的标志
+	bool fileIsEmpty;
 
+	//往届记录
+	map<int, vector<string>> m_record;
 
 };
 
